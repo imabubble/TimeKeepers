@@ -1,0 +1,24 @@
+﻿<Window x:Class="TimeKeepersConcept.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeKeepersConcept"
+        mc:Ignorable="d"
+        Title="Time Keepers" Height="600" Width="350">
+    <Grid x:Name="stopGameButton">
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+
+        </Grid.RowDefinitions>
+        <Button x:Name="stop_game" Content="Stop Game" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Click="stopGameButton_Click" FontSize="36"/>
+        <Button x:Name="pushButton" Content="PUSH ME" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Center" FontSize="36" Click="pushButton_Click"/>
+        <TextBlock x:Name="timeTextBlock" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="00.00" VerticalAlignment="Center" FontSize="48" FontFamily="Stencil"/>
+        <TextBlock x:Name="scoreBox" HorizontalAlignment="Left" Margin="70,67,0,0" TextWrapping="Wrap" Text="score" VerticalAlignment="Top"/>
+        <TextBlock x:Name="totalScoreBox" HorizontalAlignment="Left" Margin="70,128,0,0" TextWrapping="Wrap" Text="totalScore" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
