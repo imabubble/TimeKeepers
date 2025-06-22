@@ -1,0 +1,15 @@
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\bin\Release\TimeKeepersConcept.exe.config
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\bin\Release\TimeKeepersConcept.exe
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\bin\Release\TimeKeepersConcept.pdb
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\TimeKeepersConcept.csproj.AssemblyReference.cache
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\MainWindow.g.cs
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\App.g.cs
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\TimeKeepersConcept_MarkupCompile.cache
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\TimeKeepersConcept_MarkupCompile.lref
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\MainWindow.baml
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\TimeKeepersConcept.g.resources
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\TimeKeepersConcept.Properties.Resources.resources
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\TimeKeepersConcept.csproj.GenerateResource.cache
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\TimeKeepersConcept.csproj.CoreCompileInputs.cache
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\TimeKeepersConcept.exe
+C:\Users\madeg\OneDrive\Documents\PROJECTS\Apps\TimeKeepers\obj\Release\TimeKeepersConcept.pdb

@@ -22,40 +22,6 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\madeg\\OneDrive\\Documents\\PROJECTS\\Apps\\TimeKeepers\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\madeg\\OneDrive\\Documents\\PROJECTS\\Apps\\TimeKeepers\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "MainWindow.xaml.cs*",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T15:18:58.338Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "9f7ac7e4-48f0-4d5b-8954-66c3c04c14b4",
-        "Display": 0,
-        "X": 0,
-        "Y": 0,
-        "Width": 1127,
-        "Height": 703,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\madeg\\OneDrive\\Documents\\PROJECTS\\Apps\\TimeKeepers\\MainWindow.xaml",
@@ -63,7 +29,20 @@
               "ToolTip": "C:\\Users\\madeg\\OneDrive\\Documents\\PROJECTS\\Apps\\TimeKeepers\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-22T15:29:20.393Z",
+              "WhenOpened": "2025-06-22T16:21:49.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\madeg\\OneDrive\\Documents\\PROJECTS\\Apps\\TimeKeepers\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\madeg\\OneDrive\\Documents\\PROJECTS\\Apps\\TimeKeepers\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAwwFgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T15:18:58.338Z",
               "EditorCaption": ""
             }
           ]

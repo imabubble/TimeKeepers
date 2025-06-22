@@ -27,7 +27,7 @@
         <TextBlock x:Name="totalScoreBox1" Grid.Column ="1" HorizontalAlignment="Left" Margin="70,128,0,0" TextWrapping="Wrap" FontFamily="Consolas" Text="totalScore" FontSize="30" VerticalAlignment="Top"/>
         <Button x:Name="stop_game" Content="Stop Game" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Click="stopGameButton_Click" FontSize="36" Grid.ColumnSpan="2"/>
         <Button x:Name="pushButton" Content="PUSH ME" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Center" FontSize="36" Click="pushButton_Click"/>
-        <Button x:Name="pushButton1" Content="PUSH ME" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" FontSize="36" Click="pushButton_Click"/>
+        <Button x:Name="pushButton1" Content="PUSH ME" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" FontSize="36" Click="pushButton1_Click"/>
         
     </Grid>
 </Window>
