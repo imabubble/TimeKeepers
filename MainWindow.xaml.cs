@@ -30,7 +30,11 @@ namespace TimeKeepersConcept
         { 
             InitializeComponent();
             totalScoreBox.Text = "00";
+            totalScoreBox1.Text = "00";
             scoreBox.Text = "00";
+            scoreBox1.Text = "00";
+            timeTextBlock.Text = "10:00";
+            timeTextBlock1.Text = "10:00";
 
             timer.Interval = TimeSpan.FromSeconds(0.01);
             timer.Tick += Timer_Tick;
@@ -38,11 +42,37 @@ namespace TimeKeepersConcept
             hundredthsOfSecondsToGo = 10 * 100;
         }
 
-        enum playerPlaying
+        enum PlayerPlaying
         {
             player1Playing,
             player2Playing
         };
+
+        enum Era
+        {
+            era1,
+            era2,
+            era3,
+            final
+        };
+
+        //private void runEra()
+        //{
+        //    switch {
+        //        case era.era1
+        //        {
+
+        //        };
+        //            case era.era2
+        //            {
+
+        //            };
+        //            case era.era3
+        //            {
+
+        //            }
+        //    }
+        //}
         
         private void Timer_Tick(object sender, EventArgs e)
         {
