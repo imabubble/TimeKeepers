@@ -31,12 +31,19 @@ namespace TimeKeepersConcept
             InitializeComponent();
             totalScoreBox.Text = "00";
             scoreBox.Text = "00";
+
             timer.Interval = TimeSpan.FromSeconds(0.01);
             timer.Tick += Timer_Tick;
             timer.Start();
             hundredthsOfSecondsToGo = 10 * 100;
         }
 
+        enum playerPlaying
+        {
+            player1Playing,
+            player2Playing
+        };
+        
         private void Timer_Tick(object sender, EventArgs e)
         {
             hundredthsOfSecondsToGo--;
@@ -74,9 +81,9 @@ namespace TimeKeepersConcept
 
         public void addScore()
         {
+            /// Calculates score to be distance from the next whole integer
             score = (hundredthsOfSecondsToGo) % 100;
-            Console.WriteLine(hundredthsOfSecondsToGo);
-            Console.WriteLine(score);
+            if (score > 50) { score = 100 - score; }
             scoreBox.Text = score.ToString();
             totalScore += score;
             totalScoreBox.Text = totalScore.ToString();
