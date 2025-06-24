@@ -65,78 +65,63 @@ namespace TimeKeepersConcept
             era1,
             era2,
             era3,
-            final
+            final,
+            gameEnd
         };
 
         private void Timer_Tick(object sender, EventArgs e)
-        { 
-            if (timerRunning)
-            {
-                while (roundTracker <= 3)
-                {
-                    era = Era.era1;
-                    RunRounds();
-                }
-                while ((roundTracker >4) && (roundTracker <= 6))
-                {
-                    era = Era.era2;
-                    RunRounds();
-                }
-                while ((roundTracker > 6) && (roundTracker <= 9))
-                {
-                    era = Era.era3;
-                    RunRounds();
-                }
-                if (roundTracker == 10)
-                {
-                    era = Era.final;
-                    RunRounds();
-                }
-            }
-        }
-
-        private void RunRounds()
         {
-            int elapsedHundredthsOfSeconds = (int)(datetime - DateTime.Now).TotalMilliseconds / 10;
-            hundredthsOfSecondsToGo = 10 * 100 + elapsedHundredthsOfSeconds;
-            // the counters go down together when it's the final round
-            if (era == Era.final)
-            {
-                timeTextBlock.Text = (hundredthsOfSecondsToGo / 100F).ToString("00.00");
-                timeTextBlock1.Text = (hundredthsOfSecondsToGo / 100F).ToString("00.00");
-                if (hundredthsOfSecondsToGo <= 0)
-                {
+            eraChecker();
+            playerChecker();
+            
+            if (roundTracker < 4) { era = Era.era1; }
+            else if (roundTracker < 7) { era = Era.era2; }
+            else { era = Era.final; }
 
-                    timeTextBlock.Text = "Time's up!";       
-                    timeTextBlock1.Text = "Time's up!";
-                    addScore();
-                }
-            }
-            else
+            if ((timerRunning) && roundTracker < 8)
             {
-                if (playerPlaying == PlayerPlaying.player1Playing)
+                int elapsedHundredthsOfSeconds = (int)(datetime - DateTime.Now).TotalMilliseconds / 10;
+                hundredthsOfSecondsToGo = 10 * 100 + elapsedHundredthsOfSeconds;
+                // the counters go down together when it's the final round
+                if (era == Era.final)
                 {
                     timeTextBlock.Text = (hundredthsOfSecondsToGo / 100F).ToString("00.00");
-
+                    timeTextBlock1.Text = (hundredthsOfSecondsToGo / 100F).ToString("00.00");
                     if (hundredthsOfSecondsToGo <= 0)
                     {
 
                         timeTextBlock.Text = "Time's up!";
+                        timeTextBlock1.Text = "Time's up!";
+                        era = Era.gameEnd;
                         addScore();
-                        Stop_Reset_Timer();
-                        Switch_Player();
                     }
                 }
                 else
                 {
-                    timeTextBlock1.Text = (hundredthsOfSecondsToGo / 100F).ToString("00.00");
-
-                    if (hundredthsOfSecondsToGo <= 0)
+                    if (playerPlaying == PlayerPlaying.player1Playing)
                     {
-                        timeTextBlock1.Text = "Time's up!";
-                        addScore();
-                        Stop_Reset_Timer();
-                        Switch_Player();
+                        timeTextBlock.Text = (hundredthsOfSecondsToGo / 100F).ToString("00.00");
+
+                        if (hundredthsOfSecondsToGo <= 0)
+                        {
+
+                            timeTextBlock.Text = "Time's up!";
+                            addScore();
+                            Stop_Reset_Timer();
+                            Switch_Player();
+                        }
+                    }
+                    else
+                    {
+                        timeTextBlock1.Text = (hundredthsOfSecondsToGo / 100F).ToString("00.00");
+
+                        if (hundredthsOfSecondsToGo <= 0)
+                        {
+                            timeTextBlock1.Text = "Time's up!";
+                            addScore();
+                            Stop_Reset_Timer();
+                            Switch_Player();
+                        }
                     }
                 }
             }
@@ -179,27 +164,43 @@ namespace TimeKeepersConcept
 
         private void pushButton_Click(object sender, RoutedEventArgs e)
         {
-            // When you click on player1's button, it either does nothing,
-            // or adds score if it's the player 1's turn
-            if (playerPlaying == PlayerPlaying.player2Playing) { return; }
-            else
+            // if it's the final round, the button works for both player 1 and 2
+            if (era == Era.final)
             {
                 addScore();
-                Stop_Reset_Timer();
-                Switch_Player();
+            }
+            else
+            // When you click on player1's button, it either does nothing,
+            // or adds score if it's the player 1's turn
+            {
+                if (playerPlaying == PlayerPlaying.player2Playing) { return; }
+                else
+                {
+                    addScore();
+                    Stop_Reset_Timer();
+                    Switch_Player();
+                }
             }
             
         }
         private void pushButton1_Click(object sender, RoutedEventArgs e)
         {
-            // When you click on player1's button, it either does nothing,
-            // or adds score if it's the player 1's turn
-            if (playerPlaying == PlayerPlaying.player1Playing) { return; }
-            else
+            // if it's the final round, the button works for both player 1 and 2
+            if (era == Era.final)
             {
                 addScore();
-                Stop_Reset_Timer();
-                Switch_Player();
+            }
+            else
+            {
+                // When you click on player1's button, it either does nothing,
+                // or adds score if it's the player 1's turn
+                if (playerPlaying == PlayerPlaying.player1Playing) { return; }
+                else
+                {
+                    addScore();
+                    Stop_Reset_Timer();
+                    Switch_Player();
+                }
             }
 
         }
@@ -220,6 +221,7 @@ namespace TimeKeepersConcept
                 totalScore1 += score;
                 totalScoreBox.Text = totalScore.ToString();
                 totalScoreBox1.Text = totalScore1.ToString();
+                era = Era.gameEnd;
             }
             else {
                 if (playerPlaying == PlayerPlaying.player1Playing)
@@ -241,7 +243,53 @@ namespace TimeKeepersConcept
 
         private void eraChecker()
         {
+            switch (era)
+            {
+                case (Era.era1):
+                    {
+                        eraTextBlock.Text = "Era 1";
+                        break;
+                    }
+                case (Era.era2):
+                    {
+                        eraTextBlock.Text = "Era 2";
+                        break;
+                    }
+                case (Era.era3):
+                    {
+                        eraTextBlock.Text = "Era 3";
+                        break;
+                    }
+                case (Era.final):
+                    {
+                        eraTextBlock.Text = "Final Round!";
+                        break;
+                    }
+                case (Era.gameEnd):
+                    {
+                        eraTextBlock.Text = "Game End";
+                        break;
+                    }
+            }
             // put brushes in here to indicate what era/round it is
+        }
+
+        private void playerChecker()
+        {
+            // put brushes in here to indicate what player is playing
+            switch (playerPlaying)
+            {
+                case (PlayerPlaying.player1Playing):
+                    {
+                        gameWindow.Background = new SolidColorBrush(Colors.Red);
+                        break;
+                    }
+                case (PlayerPlaying.player2Playing):
+                    {
+                        gameWindow.Background = new SolidColorBrush(Colors.Blue);
+                        break;
+                    }
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<Window x:Class="TimeKeepersConcept.MainWindow"
+﻿<Window x:Name="gameWindow" x:Class="TimeKeepersConcept.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,21 +13,23 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
 
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="151*"/>
+            <RowDefinition Height="144*"/>
+            <RowDefinition Height="144*"/>
+            <RowDefinition Height="72*"/>
 
         </Grid.RowDefinitions>
-        <TextBlock x:Name="timeTextBlock" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="00.00" VerticalAlignment="Center" FontSize="48" FontFamily="Stencil"/>
-        <TextBlock x:Name="timeTextBlock1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" Grid.Column ="1" TextWrapping="Wrap" Text="00.00" VerticalAlignment="Center" FontSize="48" FontFamily="Stencil"/>
-        <TextBlock x:Name="scoreBox" HorizontalAlignment="Left" Margin="70,67,0,0" TextWrapping="Wrap" Text="score" VerticalAlignment="Top" FontFamily="Consolas" FontSize="30"/>
-        <TextBlock x:Name="scoreBox1" HorizontalAlignment="Left" Grid.Column ="1" Margin="70,67,0,0" TextWrapping="Wrap" Text="score" VerticalAlignment="Top" FontFamily="Consolas" FontSize="30"/>
-        <TextBlock x:Name="totalScoreBox" HorizontalAlignment="Left" Margin="70,128,0,0" TextWrapping="Wrap" FontFamily="Consolas" Text="totalScore" FontSize="30" VerticalAlignment="Top"/>
-        <TextBlock x:Name="totalScoreBox1" Grid.Column ="1" HorizontalAlignment="Left" Margin="70,128,0,0" TextWrapping="Wrap" FontFamily="Consolas" Text="totalScore" FontSize="30" VerticalAlignment="Top"/>
-        <Button x:Name="stop_game" Content="Start/Stop Game" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Click="stopGameButton_Click" FontSize="36" Grid.ColumnSpan="2"/>
-        <Button x:Name="pushButton" Content="PUSH ME" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Center" FontSize="36" Click="pushButton_Click"/>
-        <Button x:Name="pushButton1" Content="PUSH ME" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" FontSize="36" Click="pushButton1_Click"/>
-        
+        <TextBlock x:Name="timeTextBlock" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="00.00" VerticalAlignment="Center" FontSize="48" FontFamily="Stencil" Height="56" Width="126"/>
+        <TextBlock x:Name="timeTextBlock1" HorizontalAlignment="Center" Grid.Row="2" Grid.Column ="1" TextWrapping="Wrap" Text="00.00" VerticalAlignment="Center" FontSize="48" FontFamily="Stencil" Height="56" Width="126"/>
+        <TextBlock x:Name="scoreBox" HorizontalAlignment="Left" Margin="70,27,0,0" TextWrapping="Wrap" Text="score" VerticalAlignment="Top" FontFamily="Consolas" FontSize="30" Grid.Row="1" Height="36" Width="93"/>
+        <TextBlock x:Name="scoreBox1" HorizontalAlignment="Left" Grid.Column ="1" Margin="70,27,0,0" TextWrapping="Wrap" Text="score" VerticalAlignment="Top" FontFamily="Consolas" FontSize="30" Grid.Row="1" Height="35" Width="84"/>
+        <TextBlock x:Name="totalScoreBox" HorizontalAlignment="Left" Margin="70,88,0,0" TextWrapping="Wrap" FontFamily="Consolas" Text="totalScore" FontSize="30" VerticalAlignment="Top" Grid.Row="1" Height="35" Width="165"/>
+        <TextBlock x:Name="totalScoreBox1" Grid.Column ="1" HorizontalAlignment="Left" Margin="70,88,0,0" TextWrapping="Wrap" FontFamily="Consolas" Text="totalScore" FontSize="30" VerticalAlignment="Top" Grid.Row="1" Height="35" Width="166"/>
+        <Button x:Name="stop_game" Content="Start/Stop Game" Margin="235,0,0,0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Click="stopGameButton_Click" FontSize="36" Grid.ColumnSpan="2" Height="52" Width="266"/>
+        <Button x:Name="pushButton" Content="PUSH ME" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontSize="36" Click="pushButton_Click" Height="52" Width="154"/>
+        <Button x:Name="pushButton1" Content="PUSH ME" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" FontSize="36" Click="pushButton1_Click" Height="52" Width="154"/>
+        <TextBlock x:Name="eraTextBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Era" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="208" FontSize="30" FontFamily="Bauhaus 93"/>
+
     </Grid>
 </Window>
