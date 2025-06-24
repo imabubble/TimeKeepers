@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\madeg\\OneDrive\\Documents\\PROJECTS\\Apps\\TimeKeepers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9236EA8D-1032-4CC2-8B73-D6DA1C538336}|TimeKeepersConcept.csproj|C:\\Users\\madeg\\OneDrive\\Documents\\PROJECTS\\Apps\\TimeKeepers\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9236EA8D-1032-4CC2-8B73-D6DA1C538336}|TimeKeepersConcept.csproj|c:\\users\\madeg\\onedrive\\documents\\projects\\apps\\timekeepers\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9236EA8D-1032-4CC2-8B73-D6DA1C538336}|TimeKeepersConcept.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9236EA8D-1032-4CC2-8B73-D6DA1C538336}|TimeKeepersConcept.csproj|c:\\users\\madeg\\onedrive\\documents\\projects\\apps\\timekeepers\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{9236EA8D-1032-4CC2-8B73-D6DA1C538336}|TimeKeepersConcept.csproj|C:\\Users\\madeg\\OneDrive\\Documents\\PROJECTS\\Apps\\TimeKeepers\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9236EA8D-1032-4CC2-8B73-D6DA1C538336}|TimeKeepersConcept.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\madeg\\OneDrive\\Documents\\PROJECTS\\Apps\\TimeKeepers\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAowBgAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAALsAAAAAAAAAAAAuwNkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T15:18:58.338Z",
               "EditorCaption": ""
